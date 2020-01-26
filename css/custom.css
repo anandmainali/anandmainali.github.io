@@ -1,0 +1,207 @@
+.blink {
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+.section-title.skills {
+  margin-left: 0px !important;
+}
+.progress {
+  height: 6px;
+  margin-bottom: 20px;
+}
+
+.progress-bar {
+  background-color: #4caf50;
+}
+
+.skills-head {
+  margin-bottom: 2rem !important;
+}
+
+.skill p {
+  font-family: Inconsolata, monospace;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.skill-value {
+  float: right;
+}
+
+/* resume section */
+.resume-list .resume-list__block {
+  border-left: 2px solid #fff;
+  padding-left: 25px;
+  padding-bottom: 50px;
+}
+
+.resume-list .resume-list__block:before {
+  width: 12px;
+  height: 12px;
+  border: 2px solid #fff;
+  position: absolute;
+  content: "";
+  border-radius: 50%;
+  background-color: #2a132c;
+  left: 10px;
+}
+
+.resume-list .resume-list__block p {
+  margin: 0;
+}
+.resume-list .resume-list__block-title {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 14px;
+  line-height: 20px;
+  font-family: Roboto Mono, monospace;
+  font-weight: 700;
+  padding-bottom: 5px;
+}
+
+.resume-list .resume-list__block-date {
+  font-family: Inconsolata, monospace;
+  font-size: 14px;
+  line-height: 20px;
+  color: #999;
+  padding-bottom: 10px;
+}
+
+.resume-list .resume-list__block:last-child {
+  padding-bottom: 0;
+}
+
+.blog-link {
+  color: #fff;
+}
+
+/* projects */
+.project-card {
+  margin-left: 0;
+  margin-bottom: 40px;
+  transition: box-shadow 0.3s;
+  margin-right: 0;
+}
+
+.project-card .project-card__img {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.project-card .project-card__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-style: none;
+  vertical-align: none;
+}
+
+.project-card .project-card__info {
+  border: 1px solid #f1f1f1;
+  padding: 50px 50px 40px 30px;
+}
+.project-card .project-card__link {
+  margin-top: 55px;
+  font-family: Roboto Mono, monospace;
+  font-size: 14px;
+  line-height: 20px;
+  float: right;
+}
+.project-card .project-card__title {
+  font-size: 18px;
+  line-height: 30px;
+  font-family: Roboto Mono, monospace;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.project-card .project-card__description {
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 45px;
+}
+
+.project-card .project-card__stack {
+  font-family: Roboto Mono, monospace;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.tags li {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 20px;
+  background-color: #fff;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.14);
+  padding: 5px 10px;
+  margin-right: 10px;
+  border-radius: 3px;
+  color: red;
+  text-transform: uppercase;
+}
+
+/* posts */
+.post-cards {
+  margin-bottom: 40px;
+}
+
+a .post {
+  color: #6d56c1;
+  transition: all 0.3s;
+  position: relative;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a .post:hover {
+  color: unset;
+}
+
+.post-cards .post-cards__card {
+  transition: all 0.3s;
+}
+
+.post-cards .post-cards__img {
+  padding-top: 100%;
+  position: relative;
+}
+.post-cards .post-cards__img img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  top: 0;
+  border-style: none;
+  vertical-align: none;
+}
+.post-cards .post-cards__info {
+  border: 1px solid #f1f1f1;
+  padding: 20px 40px 40px 20px;
+}
+.post-cards .post-cards__date {
+  font-size: 12px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #999;
+  margin-bottom: 10px;
+}
+.post-cards .post-cards_title {
+  font-family: Roboto Mono, monospace;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  font-weight: 700;
+  color: #fff;
+}
