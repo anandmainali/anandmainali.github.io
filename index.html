@@ -1,798 +1,522 @@
-<!doctype html>
-<html class="no-js" lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-  <title>Anand Kumar Mainali - Portfolio</title>
-  <meta name="description" content="I am senior full stack developer able to build a Web presence from the ground up - from concept, navigation, layout and programming.">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- Disable screen scaling-->
-  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, user-scalable=0">
+  <!-- Primary SEO -->
+  <title>Anand Kumar Mainali – Full Stack Developer | Laravel & ReactJS Engineer</title>
+  <meta name="description" content="Full-Stack Engineer with 6+ years of experience building scalable SaaS platforms, multi-tenant systems, and API-driven applications. Expert in PHP, Laravel, ReactJS, and VueJS based in Kathmandu, Nepal." />
+  <meta name="keywords" content="Anand Kumar Mainali, Full Stack Developer, Laravel Developer, ReactJS Developer, PHP Developer, Nepal, SaaS, Multi-tenant, Backend Engineer" />
+  <meta name="author" content="Anand Kumar Mainali" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://anandmainali.com.np/" />
 
-  <!-- Twitter Meta -->
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Anand Kumar Mainali - Portfolio">
-  <meta name="twitter:description" content="I am senior full stack developer able to build a Web presence from the ground up - from concept, navigation, layout and programming.">
-  <meta name="twitter:image" content="img/anand.jpg">
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://anandmainali.com.np/" />
+  <meta property="og:title" content="Anand Kumar Mainali – Full Stack Developer" />
+  <meta property="og:description" content="Full-Stack Engineer with 6+ years of experience building scalable SaaS platforms, multi-tenant systems, and API-driven applications. Expert in PHP, Laravel, ReactJS, and VueJS." />
+  <meta property="og:image" content="https://anandmainali.com.np/profile.png" />
+  <meta property="og:site_name" content="Anand Kumar Mainali" />
+  <meta property="og:locale" content="en_US" />
 
-  <!-- Facebook Meta -->
-  <meta property="og:url" content="https://anandmainali.com.np">
-  <meta property="og:title" content="Anand Kumar Mainali - Portfolio">
-  <meta property="og:description" content="I am senior full stack developer able to build a Web presence from the ground up - from concept, navigation, layout and programming.">
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="img/anand.jpg">
-  <meta property="og:image:secure_url" content="img/anand.jpg">
-  <meta property="og:image:type" content="image/jpg">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Anand Kumar Mainali – Full Stack Developer" />
+  <meta name="twitter:description" content="Full-Stack Engineer with 6+ years of experience building scalable SaaS platforms, multi-tenant systems, and API-driven applications." />
+  <meta name="twitter:image" content="https://anandmainali.com.np/profile.png" />
 
-  <!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
-  <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
-        <link rel="icon" href="img/favicon/favicon.ico" type="image/x-icon">
-  <!-- Web fonts and Web Icons -->
-  <link rel="stylesheet" href="fonts/opensans/stylesheet.css">
-  <link rel="stylesheet" href="fonts/bebas/stylesheet.css">
-  <link rel="stylesheet" href="fonts/ionicons.min.css">
-  <link rel="stylesheet" href="fonts/font-awesome.min.css">
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Anand Kumar Mainali",
+    "jobTitle": "Full Stack Developer",
+    "url": "https://anandmainali.com.np",
+    "email": "anandmainali5@gmail.com",
+    "image": "https://anandmainali.com.np/profile.png",
+    "sameAs": [
+      "https://www.linkedin.com/in/anandmainali",
+      "https://github.com/anandmainali"
+    ],
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Kathmandu",
+      "addressCountry": "NP"
+    },
+    "knowsAbout": ["PHP", "Laravel", "ReactJS", "VueJS", "REST APIs", "Multi-tenant SaaS", "JavaScript"]
+  }
+  </script>
 
-  <!-- Vendor CSS style -->
-  <link rel="stylesheet" href="css/pageloader.css">
-
-  <!-- Uncomment below to load individualy vendor CSS -->
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="js/vendor/swiper.min.css">
-  <link rel="stylesheet" href="js/vendor/jquery.fullpage.min.css">
-  <link rel="stylesheet" href="js/vegas/vegas.min.css">
-
-  <!-- Main CSS files -->
-  <link rel="stylesheet" href="css/main.css">
-
-  <!-- add alt layout here -->
-  <link rel="stylesheet" href="css/style-default.css">
-  <link rel="stylesheet" href="css/custom.css">
-
-  <script src="js/vendor/modernizr-2.7.1.min.js"></script>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
 </head>
+<body>
 
-<body id="menu" class="body-page">
-
-  <!-- Page Loader : just comment these lines to remove it -->
-  <div class="page-loader" id="page-loader">
-    <div>
-      <div class="icon ion-spin"></div>
-      <p>loading</p>
-    </div>
-  </div>
-
-  <!-- BEGIN OF site header Menu -->
-  <header class="page-header navbar page-header-alpha scrolled-white menu-right topmenu-right">
-
-    <!-- Begin of menu icon toggler -->
-    <button class="navbar-toggler site-menu-icon" id="navMenuIcon">
-      <!-- Available class : menu-icon-dot / menu-icon-thick /menu-icon-random -->
-      <span class="menu-icon menu-icon-random">
-        <span class="bars">
-          <span class="bar1"></span>
-          <span class="bar2"></span>
-          <span class="bar3"></span>
-        </span>
-      </span>
-    </button>
-    <!-- End of menu icon toggler -->
-
-    <!-- Begin of logo/brand -->
-    <a class="navbar-brand" href="index.html">
-      <span class="logo">
-        <img class="light-logo" src="img/anand.jpg" alt="Anand Kumar Mainali" style="border-radius: 25px;">
-      </span>
-      <span class="text">
-        <span class="line">Anand K. Mainali</span>
-        <span class="line sub">Software Engineer</span>
-      </span>
-    </a>
-    <!-- End of logo/brand -->
-
-    <!-- begin of menu wrapper -->
-    <div class="all-menu-wrapper" id="navbarMenu">
-
-      <!-- Begin of sidebar nav menu params class: text-only / icon-only-->
-      <nav class="navbar-sidebar ">
-        <ul class="navbar-nav" id="qmenu">
-          <li class="nav-item" data-menuanchor="home">
-            <a href="#home">
-              <i class="icon ion-ios-home-outline"></i>
-              <span class="txt">Home</span>
-            </a>
-          </li>
-          <li class="nav-item" data-menuanchor="about">
-            <a href="#about">
-              <i class="icon ion-ios-information-outline"></i>
-              <span class="txt">About</span>
-            </a>
-          </li>
-          <li class="nav-item" data-menuanchor="resume">
-            <a href="#resume">
-              <i class="icon ion-university"></i>
-              <span class="txt">Resume</span>
-            </a>
-          </li>
-          <li class="nav-item" data-menuanchor="skills">
-            <a href="#skills">
-              <i class="icon ion-android-laptop"></i>
-              <span class="txt">Skills</span>
-            </a>
-          </li>
-          <li class="nav-item" data-menuanchor="projects">
-            <a href="#projects">
-              <i class="icon ion-ios-briefcase"></i>
-              <span class="txt">Projects</span>
-            </a>
-          </li>
-          <li class="nav-item" data-menuanchor="blog">
-            <a href="#blog">
-              <i class="icon ion-ios-paper"></i>
-              <span class="txt">Blog</span>
-            </a>
-          </li>
-          <li class="nav-item" data-menuanchor="contact">
-            <a href="#contact">
-              <i class="icon ion-ios-telephone-outline"></i>
-              <span class="txt">Contact</span>
-            </a>
-          </li>
-        </ul>
-      </nav>
-      <!-- End of sidebar nav menu -->
-    </div>
-    <!-- end of menu wrapper -->
-
-  </header>
-  <!-- END OF site header Menu-->
-
-  <!-- BEGIN OF page cover -->
-  <div class="hh-cover page-cover">
-    <!-- Cover Background -->
-    <div class="cover-bg bg-img " data-image-src="img/bg-default1.jpg"></div>
-
-    <!-- Particles as background - uncomment below to use particles/snow -->
-    <div id="particles-js" class="cover-bg pos-abs full-size bg-color" data-bgcolor="rgba(2, 3, 10, 0.7)"></div>
-  </div>
-  <!--END OF page cover -->
-
-  <!-- BEGIN OF page main content -->
-  <main class="page-main page-fullpage main-anim" id="mainpage">
-
-    <!-- Begin of home section -->
-    <div class="section section-home fullscreen-md fp-auto-height-responsive " data-section="home" style="margin-left: 70px;">
-      <!-- Begin of section wrapper -->
-      <div class="section-wrapper">
-        <!-- content -->
-        <div class="section-content anim">
-          <div class="row">
-            <div class="col-12 col-md-6 text-left">
-              <!-- title and description -->
-              <div class="title-desc">
-                <p><b style="margin-right: 73px;">EMAIL :</b> anandmainali5@gmail.com</p>
-                <p><b style="margin-right: 5px;">TEMP ADDRESS :</b> Maharajgunj, Kathmandu</p>
-                <p><b style="margin-right: 38px;">LANGUAGE :</b> Nepali,English,Hindi</p>
-                <p><b style="margin-right: 60px;">GENDER :</b> Male</p>
-              </div>
-
-              <!-- Action button -->
-              <div class="btns-action anim-3">
-                <a class="btn btn-outline-white btn-round" href="https://www.linkedin.com/in/anand-mainali-921578128" target="_blank">
-                  <span class="fa fa-briefcase"></span> Hire Me
-                </a>
-              </div>
-            </div>
-
-            <!-- begin of right content -->
-            <div class="col-12 col-md-6 right-content hidden-sm center-vh">
-              <!-- content -->
-              <div class="section-content">
-                <!-- illustartion -->
-                <div class="illustr zoomout-1">
-                  <img class="logo" src="img/anand.jpg" alt="Logo" style="height: 350px;border-radius: 10px;">
-                </div>
-              </div>
-            </div>
-            <!-- end of right content -->
-          </div>
-        </div>
-
-
-        <!-- Arrows scroll down/up -->
-        <footer class="section-footer scrolldown">
-          <a class="down">
-            <span class="icon"></span>
-            <span class="txt">Scroll Down</span>
-          </a>
-        </footer>
-      </div>
-      <!-- End of section wrapper -->
-    </div>
-    <!-- End of home section -->
-
-    <!-- Begin of description section -->
-    <div class="section section-description fp-auto-height-responsive" data-section="about">
-      <!-- Begin of section wrapper -->
-      <div class="section-wrapper center-vh dir-col anim">
-        <!-- title -->
-        <div class="section-title text-center">
-          <!-- <h5 class="title-bg">About</h5> -->
-          <h2 class="display-4 display-title anim-2">Hi there<span class="blink">_</span></h2>
-        </div>
-
-        <!-- content -->
-        <div class="section-content reduced anim text-center">
-          <!-- title and description -->
-          <div class="title-desc anim-3" style="text-align: justify;">
-            <p>
-              With over six years of experience in building and optimizing scalable web applications, I specialize in delivering robust solutions using PHP, Laravel, ReactJS, VueJS, and third-party API integrations. I’ve worked extensively on multi-tenant SaaS platforms, implemented new features from the ground up, and refined existing systems for better performance and reliability. My portfolio includes integrating 30+ third-party APIs—from payment gateways like Stripe and eSewa to complex authentication and automation systems—ensuring seamless, secure, and efficient workflows.<br><br>
-              I’m passionate about creating clean, well-structured, and maintainable code, backed by strong security practices and performance enhancements using tools like Redis and Varnish. I’ve successfully managed CI/CD pipelines and AWS infrastructure to support smooth deployments and scalable architecture. I’m driven by opportunities to collaborate with talented teams and deliver high-quality, future-ready applications that help businesses grow. If you're looking for someone who can add real value to your project, you're in the right place.</p>
-          </div>
-
-        </div>
-
-        <!-- Arrows scroll down/up -->
-        <footer class="section-footer scrolldown">
-          <a class="down">
-            <span class="icon"></span>
-            <span class="txt">Scroll Down</span>
-          </a>
-        </footer>
-      </div>
-      <!-- End of section wrapper -->
-    </div>
-    <!-- End of description section -->
-
-
-    <!-- Begin of Education section -->
-    <div class="section section-description fp-auto-height-responsive" data-section="resume">
-      <!-- Begin of section wrapper -->
-      <div class="section-wrapper center-vh dir-col anim">
-        <!-- title -->
-        <div class="section-title text-center">
-          <h2 class="display-7 display-title anim-2 skills-head">Education<span class="blink">_</span></h2>
-        </div>
-
-        <!-- content -->
-        <div class="section-content reduced anim">      
-          <div class="row">
-            <div class="col-md-8 section__resume resume-list">
-                      <div class="resume-list__block">
-                <p class="resume-list__block-title">THE ARYAN SCHOOL OF ENGINEERING, KATHMANDU </p>
-                <p class="resume-list__block-date">2014 - 2019 </p>
-                <p>
-                  Bachelor In Information Technology
-                </p>
-              </div>
-                      <div class="resume-list__block">
-                <p class="resume-list__block-title">SHREE ADHUNIK RASTRIYA HIGHER SECONDARY SCHOOL, HETAUDA </p>
-                <p class="resume-list__block-date">2012 - 2014 </p>
-                <p>
-                  +2, Management(OPT. Basic Maths, Business Maths)
-                </p>
-              </div>
-                      <div class="resume-list__block">
-                <p class="resume-list__block-title">SHREE ADHUNIK RASTRIYA HIGHER SECONDARY SCHOOL, HETAUDA </p>
-                <p class="resume-list__block-date">2010 - 2012 </p>
-                <p>
-                  Started from class 9.
-                </p>
-              </div>
-                    </div>
-          </div>                      
-          
-        </div>
-
-        <!-- Arrows scroll down/up -->
-        <footer class="section-footer scrolldown">
-          <a class="down">
-            <span class="icon"></span>
-            <span class="txt">Scroll Down</span>
-          </a>
-        </footer>
-      </div>
-      <!-- End of section wrapper -->
-    </div>
-    <!-- End of Education section -->
-
-    <!-- Begin of Experience section -->
-    <div class="section section-description fp-auto-height-responsive" data-section="experience">
-      <!-- Begin of section wrapper -->
-      <div class="section-wrapper center-vh dir-col anim">
-        <!-- title -->
-        <div class="section-title text-center">
-          <h2 class="display-7 display-title anim-2 skills-head">Experience<span class="blink">_</span></h2>
-        </div>
-
-        <!-- content -->
-        <div class="section-content reduced anim">      
-          <div class="row">
-            <div class="col-md-8 section__resume resume-list">
-              <div class="resume-list__block">
-                <p class="resume-list__block-title">CyberArrow</p>
-                <p class="resume-list__block-date">2022 - Current</p>
-                <p>
-                  Software Engineer
-                </p>
-              </div>
-              <div class="resume-list__block">
-                <p class="resume-list__block-title">SoftNEP PVT. LTD.</p>
-                <p class="resume-list__block-date">2019 - 2021</p>
-                <p>
-                  Software Engineer
-                </p>
-              </div>
-              <div class="resume-list__block">
-                <p class="resume-list__block-title">Quick Web Solution PVT. LTD.</p>
-                <p class="resume-list__block-date">2018 - 2019</p>
-                <p>
-                  Software Engineer
-                </p>
-              </div>
-                      <div class="resume-list__block">
-                <p class="resume-list__block-title">TECHNOLINKS COMMUNICATION PVT. LTD.</p>
-                <p class="resume-list__block-date">2016 - 2017</p>
-                <p>
-                  Computer and Network Technician in Ministry Of Federal Affairs and Local Development
-                </p>
-              </div>
-
-              </div>
-          </div>                      
-          
-        </div>
-
-        <!-- Arrows scroll down/up -->
-        <footer class="section-footer scrolldown">
-          <a class="down">
-            <span class="icon"></span>
-            <span class="txt">Scroll Down</span>
-          </a>
-        </footer>
-      </div>
-      <!-- End of section wrapper -->
-    </div>
-    <!-- End of Experience section -->
-
-
-    
-
-    <!-- Begin of Skills section -->
-    <div class="section section-description fp-auto-height-responsive" data-section="skills">
-      <!-- Begin of section wrapper -->
-      <div class="section-wrapper center-vh dir-col anim">
-        <!-- title -->
-        <div class="section-title text-center">
-          <h2 class="display-7 display-title anim-2 skills-head">General Skills<span class="blink">_</span></h2>
-        </div>
-
-        <!-- content -->
-        <div class="section-content reduced anim row">      
-            <div class="col-md-6">
-            <div class="skill">
-              <p>
-                <span class="skill-title">HTML5</span>
-                <span class="skill-value">80%</span>
-              </p>
-              <div class="progress">
-                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">
-                </div>
-              </div>
-            </div>
-            </div>
-                    <div class="col-md-6">
-            <div class="skill">
-              <p>
-                <span class="skill-title">BOOTSTRAP 4</span>
-                <span class="skill-value">80%</span>
-              </p>
-              <div class="progress">
-                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">
-                </div>
-              </div>
-            </div>
-            </div>
-                    <div class="col-md-6">
-            <div class="skill">
-              <p>
-                <span class="skill-title">CSS3</span>
-                <span class="skill-value">70%</span>
-              </p>
-              <div class="progress">
-                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
-                </div>
-              </div>
-            </div>
-            </div>
-                    <div class="col-md-6">
-            <div class="skill">
-              <p>
-                <span class="skill-title">LARAVEL</span>
-                <span class="skill-value">80%</span>
-              </p>
-              <div class="progress">
-                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">
-                </div>
-              </div>
-            </div>
-            </div>
-                    <div class="col-md-6">
-            <div class="skill">
-              <p>
-                <span class="skill-title">JAVASCRIPT</span>
-                <span class="skill-value">60%</span>
-              </p>
-              <div class="progress">
-                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
-                </div>
-              </div>
-            </div>
-            </div>
-                    <div class="col-md-6">
-            <div class="skill">
-              <p>
-                <span class="skill-title">GIT</span>
-                <span class="skill-value">70%</span>
-              </p>
-              <div class="progress">
-                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
-                </div>
-              </div>
-            </div>
-            </div>
-                    <div class="col-md-6">
-            <div class="skill">
-              <p>
-                <span class="skill-title">JQUERY</span>
-                <span class="skill-value">60%</span>
-              </p>
-              <div class="progress">
-                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
-                </div>
-              </div>
-            </div>
-            </div>
-                    <div class="col-md-6">
-            <div class="skill">
-              <p>
-                <span class="skill-title">Vue Js</span>
-                <span class="skill-value">60%</span>
-              </p>
-              <div class="progress">
-                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
-                </div>
-              </div>
-            </div>
-            </div>
-                    <div class="col-md-6">
-            <div class="skill">
-              <p>
-                <span class="skill-title">Linux</span>
-                <span class="skill-value">60%</span>
-              </p>
-              <div class="progress">
-                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
-                </div>
-              </div>
-            </div>
-            </div>
-                    <div class="col-md-6">
-            <div class="skill">
-              <p>
-                <span class="skill-title">Wordpress</span>
-                <span class="skill-value">60%</span>
-              </p>
-              <div class="progress">
-                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
-                </div>
-              </div>
-            </div>
-            </div>
-            </div>                 
-          
-          
-        </div>
-
-        <!-- Arrows scroll down/up -->
-        <footer class="section-footer scrolldown">
-          <a class="down">
-            <span class="icon"></span>
-            <span class="txt">Scroll Down</span>
-          </a>
-        </footer>
-      </div>
-      <!-- End of section wrapper -->
-    </div>
-    <!-- End of Skills section -->
-
-    <!-- Begin of projects section -->
-    <div class="section section-description fp-auto-height-responsive" data-section="projects">
-      <!-- Begin of section wrapper -->
-      <div class="section-wrapper center-vh dir-col anim" style="max-width: 850px !important;">
-        <!-- title -->
-        <div class="section-title text-center">
-          <h2 class="display-7 display-title anim-2 skills-head">Projects<span class="blink">_</span></h2>
-        </div>
-
-        <!-- content -->
-        <div class="section-content reduced anim" style="width: 100% !important;">
-            
-            <div class="portfolio-cards">
-              <div class="row project-card" data-toggle="modal" data-target="#portfolioModal" data-portfolio-tag="web-sites">
-                <div class="col-md-6 col-lg-5 project-card__img">
-                  <img class="" src="img/acc.png" alt="project-img">
-                </div>
-                <div class="col-md-6 col-lg-7 project-card__info">
-                  <h3 class="project-card__title">Arthritis Care Center Nepal</h3>
-                  <p class="project-card__description">
-                    It was Established in 2014 and providing excellent services in rheumatology in nepal. This center is dedicated to the diagnosis and treatment of people with rheumatic and musculoskeletal diseases.
-                  </p>
-                  <p class="project-card__stack">Used stack:</p>
-                  <ul class="tags">
-                    <li>html5</li>
-                    <li>css3</li>
-                    <li>JavaScript</li>
-                    <li>Laravel</li>
-                  </ul>
-                  <a href="https://accnepal.com" target="_blank" class="project-card__link">www.accnepal.com</a>
-                </div>
-              </div>
-              <div class="row project-card" data-toggle="modal" data-target="#portfolioModal" data-portfolio-tag="mobile apps">
-                <div class="col-md-6 col-lg-5 project-card__img">
-                  <img class="" src="img/helpme.png" alt="project-img">
-                </div>
-                <div class="col-md-6 col-lg-7 project-card__info">
-                  <h3 class="project-card__title">Helpme Dot Com Pvt. Ltd.</h3>
-                  <p class="project-card__description">
-                    Helpme Dot Com Pvt. Ltd. is a E-commerce platform which is established with the goal of providing goods & services in suitable cost.
-                  </p>
-                  <p class="project-card__stack">Used stack:</p>
-                  <ul class="tags">
-                    <li>html5</li>
-                    <li>css3</li>
-                    <li>JavaScript</li>
-                    <li>Laravel</li>
-                  </ul>
-                  <a href="https://helpme.com.np" target="_blank" class="project-card__link">www.helpme.com.np</a>
-                </div>
-              </div>                
-          </div>
-          
-        </div>
-
-        <!-- Arrows scroll down/up -->
-        <footer class="section-footer scrolldown">
-          <a class="down">
-            <span class="icon"></span>
-            <span class="txt">Scroll Down</span>
-          </a>
-        </footer>
-      </div>
-      <!-- End of section wrapper -->
-    </div>
-    <!-- End of projects section -->
-
-    <!-- Begin of blog section -->
-    <!-- <div class="section section-description fp-auto-height-responsive" data-section="blog"  style="max-width: 850px !important;margin-left: auto;margin-right: auto;">
-      
-      <div class="section-wrapper center-vh dir-col anim">
-        
-        <div class="section-title text-center">
-          <h2 class="display-7 display-title anim-2 skills-head">Latest Posts<span class="blink">_</span></h2>
-        </div>
-
-        
-        <div class="section-content reduced anim" style="width: 100% !important;"> 
-        
-            <div class="row post-cards">
-              <div class="col-md-4">
-                <a class="post" href="blog.html">
-                  <div class="post-cards__card">
-                    <div class="post-cards__img">
-                      <img src="https://previews.aspirity.com/spirit/assets/img/img_blog_1.png" alt="blog_img">
-                    </div>
-                    <div class="post-cards__info">
-                      <p class="post-cards__date">October 22, 2017</p>
-                      <h3 class="post-cards_title">How to use css-preprocessor</h3>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="col-md-4">
-                <a class="post" href="blog.html">
-                  <div class="post-cards__card">
-                    <div class="post-cards__img">
-                      <img src="https://previews.aspirity.com/spirit/assets/img/img_blog_2.png" alt="blog_img">
-                    </div>
-                    <div class="post-cards__info">
-                      <p class="post-cards__date">October 22, 2017</p>
-                      <h3 class="post-cards_title">How I organize my work with code</h3>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="col-md-4">
-                <a class="post" href="blog.html">
-                  <div class="post-cards__card">
-                    <div class="post-cards__img">
-                      <img src="https://previews.aspirity.com/spirit/assets/img/img_blog_3.png" alt="blog_img">
-                    </div>
-                    <div class="post-cards__info">
-                      <p class="post-cards__date">October 22, 2017</p>
-                      <h3 class="post-cards_title">SVG sprites vs Icon Font</h3>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-          
-        </div>
-
-       
-        <footer class="section-footer scrolldown">
-          <a class="down">
-            <span class="icon"></span>
-            <span class="txt">Scroll Down</span>
-          </a>
-        </footer>
-      </div>
-    </div> -->
-    <!-- End of blog section -->
-
-
-    <!-- Begin of contact section -->
-    <div class="section section-contact fp-auto-height-responsive no-slide-arrows " data-section="contact">
-
-      <!-- begin of information slide -->
-      <div class="slide" id="information" data-anchor="information">
-        <!-- Begin of slide section wrapper -->
-        <div class="section-wrapper">
-
-          <div class="row">
-            <div class="col-12 col-md-6">
-              <!-- content -->
-              <div class="section-content anim text-left">
-                <!-- title and description -->
-                <div class="title-desc">
-                  <div class="anim-2">
-                    <h2 class="display-4 display-title">Get in touch<span class="blink">_</span></h2>
-                    <p>For any questions about me and my project. Feel free to contact me.</p>
-                  </div>
-                  <div class="address-container anim-3">
-
-                    <div class="row">
-                      <div class="col-12 col-md-12 col-lg-6">
-                        <h4>Contact</h4>
-                        <p>Email: anandmainali5@gmail.com</p>
-                      </div>
-                      <div class="col-12 col-md-12 col-lg-6">
-                        <h4>Address</h4>
-                        <p>Maharajgunj, Kathmandu
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-12 col-md-6 col-lg-5">
-<!-- content -->
-<div class="section-content anim text-left">
-  <!-- title and description -->
-  <div class="">
-    <div class="form-container form-container-card">
-      <!-- Message form container -->
-      <!-- <form class="send_message_form message form" method="post" action="#"
-      id="message_form">
-        <div class="form-group name">
-          <label for="mes-name">Name :</label>
-          <input id="mes-name" name="name" type="text" placeholder="" class="form-control-line form-success-clean"
-          required>
-        </div>
-        <div class="form-group email">
-          <label for="mes-email">Email :</label>
-          <input id="mes-email" type="email" placeholder="" name="email" class="form-control-line form-success-clean"
-          required>
-        </div>
-        <div class="form-group no-border">
-          <label for="mes-text">Message</label>
-          <textarea id="mes-text" placeholder="..." name="message" class="form-control form-control-outline thick form-success-clean"
-          required></textarea>
-
-          <div>
-            <p class="message-ok invisible form-text-feedback form-success-visible">Your message has been sent, thank you.</p>
-          </div>
-        </div>
-
-        <div class="btns">
-          <button id="submit-message" class="btn btn-normal btn-white btn-round btn-full email_b"
-          name="submit_message">
-            <span class="txt">Send</span>
-            <span class="arrow-icon"></span>
-          </button>
-        </div>
-      </form> -->
-    </div>
-  </div>
-</div>
-            </div>
-          </div>
-        </div>
-        <!-- End of slide section wrapper -->
-      </div>
-      <!-- end of information slide -->
-
-    </div>
-    <!-- End of contact section -->
-  </main>
-  <!-- END OF page main content -->
-
-  <!-- BEGIN OF page footer -->
-  <footer id="site-footer" class="page-footer">
-    <!-- Left content -->
-    <div class="footer-left">
-      <p>Copyright © 2025  
-        <a href="#">
-          <span class="marked">Anand K. Mainali</span>
-        </a>. All rights reserved
-      </p>
-    </div>
-
-    <!-- Right content -->
-    <div class="footer-right">
-      <ul class="social">
-        <li>
-          <a href="https://www.linkedin.com/in/anand-mainali-921578128/" target="_blank">
-            <i class="icon fa fa-linkedin"></i>
-          </a>
-        </li>
-        <li>
-          <a href="https://github.com/AnandMainali" target="_blank">
-            <i class="icon fa fa-github"></i>
-          </a>
-        </li>
-        <li>
-          <a href="https://stackoverflow.com/users/8519896/anand-mainali?tab=profile" target="_blank">
-            <i class="icon fa fa-stack-overflow"></i>
-          </a>
-        </li>
-        <!-- <li>
-          <a href="#" target="_blank">
-            <i class="icon fa fa-twitter"></i>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <i class="icon fa fa-instagram"></i>
-          </a>
-        </li> -->
+  <!-- NAV -->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#hero" class="nav-logo">AM</a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact" class="btn btn-sm">Contact</a></li>
       </ul>
+      <button class="nav-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero" id="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <p class="hero-greeting">Hi, I'm</p>
+          <h1 class="hero-name">Anand Kumar<br>Mainali</h1>
+          <h2 class="hero-title">Full Stack Engineer</h2>
+          <p class="hero-bio">
+            6+ years building scalable SaaS platforms, multi-tenant systems, and
+            API-driven applications. Specialising in <span class="highlight">PHP · Laravel · ReactJS · TypeScript</span>.
+          </p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">View Projects</a>
+            <a href="#contact" class="btn btn-outline">Get in Touch</a>
+          </div>
+          <div class="hero-socials">
+            <a href="mailto:anandmainali5@gmail.com" aria-label="Email">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="2,4 12,13 22,4"/></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/anandmainali" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+            <a href="https://github.com/anandmainali" target="_blank" rel="noopener" aria-label="GitHub">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="photo-card" id="photoCard">
+            <div class="photo-wrap">
+              <img src="profile.png" alt="Anand Kumar Mainali – Full Stack Developer" class="profile-photo" />
+            </div>
+          </div>
+          <div class="floating-badge badge-1">Laravel</div>
+          <div class="floating-badge badge-2">ReactJS</div>
+          <div class="floating-badge badge-3">VueJS</div>
+        </div>
+      </div>
+      <div class="hero-scroll">
+        <span>Scroll</span>
+        <div class="scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section about" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">About Me</span>
+          <h2 class="section-title">Building systems that scale</h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-text">
+            <p>
+              I'm a Full-Stack Engineer based in <strong>Kathmandu, Nepal</strong> with over 6 years of
+              hands-on experience building production-grade web applications. I thrive on architecting
+              clean, maintainable codebases and delivering reliable software that real businesses depend on.
+            </p>
+            <p>
+              My core expertise lies in <strong>PHP / Laravel</strong> on the backend and
+              <strong>ReactJS / VueJS</strong> on the frontend — often connecting them through
+              REST APIs or Inertia.js for seamless full-stack experiences. I've led teams, designed
+              multi-tenant SaaS architectures, and integrated 30+ third-party services across
+              enterprise platforms.
+            </p>
+            <p>
+              Outside of code, I'm passionate about clean architecture, developer experience, and
+              continuous learning.
+            </p>
+          </div>
+          <div class="about-stats">
+            <div class="stat-card">
+              <span class="stat-number">6+</span>
+              <span class="stat-label">Years Experience</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number">30+</span>
+              <span class="stat-label">Integrations Built</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number">3</span>
+              <span class="stat-label">Major Platforms</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number">∞</span>
+              <span class="stat-label">Lines of Code</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section skills" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Technical Skills</span>
+          <h2 class="section-title">What I work with</h2>
+        </div>
+        <div class="skills-grid">
+
+          <div class="skill-group">
+            <h3 class="skill-group-title">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+              Languages & Frameworks
+            </h3>
+            <div class="skill-tags">
+              <span class="tag tag-primary">PHP</span>
+              <span class="tag tag-primary">Laravel</span>
+              <span class="tag tag-primary">JavaScript</span>
+              <span class="tag tag-primary">TypeScript</span>
+              <span class="tag tag-primary">ReactJS</span>
+              <span class="tag tag-primary">VueJS</span>
+              <span class="tag tag-primary">Inertia.js</span>
+            </div>
+          </div>
+
+          <div class="skill-group">
+            <h3 class="skill-group-title">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+              Architecture & Backend
+            </h3>
+            <div class="skill-tags">
+              <span class="tag tag-secondary">REST APIs</span>
+              <span class="tag tag-secondary">Multi-tenant SaaS</span>
+              <span class="tag tag-secondary">Third-party Integrations</span>
+              <span class="tag tag-secondary">Clean Architecture</span>
+            </div>
+          </div>
+
+          <div class="skill-group">
+            <h3 class="skill-group-title">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+              Infrastructure
+            </h3>
+            <div class="skill-tags">
+              <span class="tag tag-accent">AWS</span>
+              <span class="tag tag-accent">Linux</span>
+              <span class="tag tag-accent">Nginx</span>
+              <span class="tag tag-accent">LAMP/LEMP</span>
+              <span class="tag tag-accent">Redis</span>
+              <span class="tag tag-accent">Varnish</span>
+            </div>
+          </div>
+
+          <div class="skill-group">
+            <h3 class="skill-group-title">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+              Tools & Platforms
+            </h3>
+            <div class="skill-tags">
+              <span class="tag tag-muted">Git</span>
+              <span class="tag tag-muted">Postman</span>
+              <span class="tag tag-muted">Jira</span>
+              <span class="tag tag-muted">Agile/Scrum</span>
+              <span class="tag tag-muted">PEST</span>
+              <span class="tag tag-muted">PHPUnit</span>
+              <span class="tag tag-muted">Stripe</span>
+              <span class="tag tag-muted">Moodle</span>
+              <span class="tag tag-muted">Thinkific</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="section experience" id="experience">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Experience</span>
+          <h2 class="section-title">Where I've worked</h2>
+        </div>
+        <div class="timeline">
+
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-role">Full Stack Engineer</h3>
+                  <p class="timeline-company">CyberArrow</p>
+                </div>
+                <span class="timeline-date">Jan 2022 – Present</span>
+              </div>
+              <ul class="timeline-list">
+                <li>Developed scalable modules supporting multi-tenant architecture</li>
+                <li>Implemented <strong>30+ third-party integrations</strong> for security and compliance automation</li>
+                <li>Improved performance using caching and database query optimization</li>
+                <li>Contributed to Moodle-based LMS customization</li>
+                <li>Wrote automated tests using PEST to improve system reliability</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-role">Backend Engineer</h3>
+                  <p class="timeline-company">Maven Solution</p>
+                </div>
+                <span class="timeline-date">Sep 2022 – Oct 2025</span>
+              </div>
+              <ul class="timeline-list">
+                <li>Built and documented REST APIs using Laravel</li>
+                <li>Integrated Stripe payment system</li>
+                <li>Developed Thinkific learning path integrations</li>
+                <li>Mentored junior developers and supported code quality practices</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-role">Team Lead</h3>
+                  <p class="timeline-company">SoftNEP Pvt. Ltd.</p>
+                </div>
+                <span class="timeline-date">Mar 2019 – Oct 2021</span>
+              </div>
+              <ul class="timeline-list">
+                <li>Led engineering team in building scalable software systems</li>
+                <li>Designed technical architecture from business requirements</li>
+                <li>Established coding standards and core framework components</li>
+                <li>Coordinated QA and delivery processes</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section projects" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Projects</span>
+          <h2 class="section-title">Things I've built</h2>
+        </div>
+        <div class="projects-grid">
+
+          <div class="project-card">
+            <div class="project-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">GRC Platform</h3>
+              <p class="project-subtitle">Multi-tenant Enterprise Compliance SaaS</p>
+              <p class="project-desc">
+                Built and scaled a multi-tenant enterprise GRC SaaS platform covering compliance, risk,
+                audit, and evidence workflows. Implemented 20+ integrations automating asset and
+                compliance data across major cloud and security platforms.
+              </p>
+              <div class="project-tags">
+                <span class="tag tag-sm">Laravel</span>
+                <span class="tag tag-sm">Multi-tenant</span>
+                <span class="tag tag-sm">Intune</span>
+                <span class="tag tag-sm">O365</span>
+                <span class="tag tag-sm">GCP</span>
+                <span class="tag tag-sm">SIEM</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">LMS Ecosystem</h3>
+              <p class="project-subtitle">Unified Learning Platforms</p>
+              <p class="project-desc">
+                Engineered an integrated LMS with SSO and provisioning, syncing hundreds of learners
+                across Moodle, Thinkific, and GoHighLevel. Automated enrollments, course lifecycle,
+                and training analytics workflows.
+              </p>
+              <div class="project-tags">
+                <span class="tag tag-sm">Moodle</span>
+                <span class="tag tag-sm">Thinkific</span>
+                <span class="tag tag-sm">GoHighLevel</span>
+                <span class="tag tag-sm">SSO</span>
+                <span class="tag tag-sm">PHP</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2zm0 0a2 2 0 0 1-2-2v-9c0-1.1.9-2 2-2h2"/><path d="M18 14h-8"/><path d="M15 18h-5"/><path d="M10 6h8v4h-8V6z"/></svg>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">News Portal Platform</h3>
+              <p class="project-subtitle">High-Traffic Digital Publishing CMS</p>
+              <p class="project-desc">
+                Developed a scalable news CMS with editorial workflows, SEO, and responsive delivery.
+                Optimized caching and database queries to handle traffic spikes and concurrent
+                readership at scale.
+              </p>
+              <div class="project-tags">
+                <span class="tag tag-sm">Laravel</span>
+                <span class="tag tag-sm">Redis</span>
+                <span class="tag tag-sm">Varnish</span>
+                <span class="tag tag-sm">SEO</span>
+                <span class="tag tag-sm">CMS</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section class="section education" id="education">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Education</span>
+          <h2 class="section-title">Academic Background</h2>
+        </div>
+        <div class="edu-card">
+          <div class="edu-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+          </div>
+          <div class="edu-body">
+            <h3 class="edu-degree">Bachelor in Information Technology</h3>
+            <p class="edu-school">Aryan School of Engineering</p>
+            <span class="edu-year">2014 – 2018</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section contact" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Contact</span>
+          <h2 class="section-title">Let's work together</h2>
+          <p class="section-desc">
+            Whether you have a project in mind or just want to connect — my inbox is always open.
+          </p>
+        </div>
+        <div class="contact-grid">
+          <a href="mailto:anandmainali5@gmail.com" class="contact-card">
+            <div class="contact-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="2,4 12,13 22,4"/></svg>
+            </div>
+            <div>
+              <p class="contact-label">Email</p>
+              <p class="contact-value">anandmainali5@gmail.com</p>
+            </div>
+          </a>
+          <a href="https://www.linkedin.com/in/anandmainali" target="_blank" rel="noopener" class="contact-card">
+            <div class="contact-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            </div>
+            <div>
+              <p class="contact-label">LinkedIn</p>
+              <p class="contact-value">linkedin.com/in/anandmainali</p>
+            </div>
+          </a>
+          <div class="contact-card contact-location">
+            <div class="contact-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div>
+              <p class="contact-label">Location</p>
+              <p class="contact-value">Kathmandu, Nepal</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p class="footer-copy">© 2025 Anand Kumar Mainali.</p>
+      <div class="footer-links">
+        <a href="#hero">Back to top ↑</a>
+      </div>
     </div>
   </footer>
-  <!-- END OF site footer -->
 
-  <!-- scripts -->
-  <!-- All Javascript plugins goes here -->
-  <script src="js/vendor/jquery-1.12.4.min.js"></script>
+  <script>
+    // Sticky nav shadow
+    const header = document.getElementById('header');
+    window.addEventListener('scroll', () => {
+      header.classList.toggle('scrolled', window.scrollY > 20);
+    });
 
-  <!-- All vendor scripts -->
-  <script src="js/vendor/scrolloverflow.min.js"></script>
-  <script src="js/vendor/all.js"></script>
-  <script src="js/particlejs/particles.min.js"></script>
+    // Mobile menu toggle
+    const toggle = document.querySelector('.nav-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    toggle.addEventListener('click', () => {
+      navLinks.classList.toggle('open');
+      toggle.classList.toggle('active');
+    });
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('open');
+        toggle.classList.remove('active');
+      });
+    });
 
-  <!-- Countdown script -->
-  <script src="js/jquery.downCount.js"></script>
+    // Intersection observer for fade-in animations
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('visible');
+          observer.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.1 });
 
-  <!-- Form script -->
-  <script src="js/form_script.js"></script>
+    document.querySelectorAll('.timeline-item, .project-card, .skill-group, .stat-card, .contact-card, .edu-card')
+      .forEach(el => observer.observe(el));
 
-  <!-- Javascript main files -->
-  <script src="js/main.js"></script>
-
-  <script src="js/particlejs/particles-init.js"></script>
+    // 3D tilt effect on profile photo
+    const heroVisual = document.querySelector('.hero-visual');
+    const photoCard = document.getElementById('photoCard');
+    if (heroVisual && photoCard) {
+      heroVisual.addEventListener('mousemove', (e) => {
+        const rect = heroVisual.getBoundingClientRect();
+        const x = (e.clientX - rect.left) / rect.width - 0.5;
+        const y = (e.clientY - rect.top) / rect.height - 0.5;
+        photoCard.style.transform = `rotateY(${x * 14}deg) rotateX(${-y * 10}deg)`;
+      });
+      heroVisual.addEventListener('mouseleave', () => {
+        photoCard.style.transform = 'rotateY(0deg) rotateX(0deg)';
+      });
+    }
+</script>
 
 </body>
 </html>
