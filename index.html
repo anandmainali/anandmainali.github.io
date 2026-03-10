@@ -17,10 +17,7 @@
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Anand Kumar Mainali – Full Stack Developer" />
   <meta property="og:description" content="Full-Stack Engineer with 6+ years of experience building scalable SaaS platforms, multi-tenant systems, and API-driven applications. Expert in PHP, Laravel, ReactJS, and VueJS." />
-  <meta property="og:image" content="https://anandmainali.com.np/profile.png" />
-  <meta property="og:image:type" content="image/png" />
-  <meta property="og:image:width" content="375" />
-  <meta property="og:image:height" content="411" />
+  <meta property="og:image" content="https://anandmainali.com.np/og-image.png" />
   <meta property="og:image:alt" content="Anand Kumar Mainali – Full Stack Developer" />
   <meta property="og:site_name" content="Anand Kumar Mainali" />
   <meta property="og:locale" content="en_US" />
@@ -31,7 +28,7 @@
   <meta property="twitter:url" content="https://anandmainali.com.np/" />
   <meta name="twitter:title" content="Anand Kumar Mainali – Full Stack Developer" />
   <meta name="twitter:description" content="Full-Stack Engineer with 6+ years of experience building scalable SaaS platforms, multi-tenant systems, and API-driven applications. Expert in PHP, Laravel, ReactJS, and VueJS." />
-  <meta name="twitter:image" content="https://anandmainali.com.np/profile.png" />
+  <meta name="twitter:image" content="https://anandmainali.com.np/og-image.png" />
 
   <!-- JSON-LD Structured Data -->
   <script type="application/ld+json">
@@ -42,7 +39,7 @@
     "jobTitle": "Full Stack Developer",
     "url": "https://anandmainali.com.np",
     "email": "anandmainali5@gmail.com",
-    "image": "https://anandmainali.com.np/profile.png",
+    "image": "https://anandmainali.com.np/og-image.png",
     "sameAs": [
       "https://www.linkedin.com/in/anandmainali",
       "https://github.com/anandmainali"
@@ -72,7 +69,7 @@
         <li><a href="#skills">Skills</a></li>
         <li><a href="#experience">Experience</a></li>
         <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact" class="btn btn-sm">Contact</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
       <button class="nav-toggle" aria-label="Toggle menu">
         <span></span><span></span><span></span>
@@ -110,14 +107,20 @@
           </div>
         </div>
         <div class="hero-visual">
-          <div class="photo-card" id="photoCard">
-            <div class="photo-wrap">
-              <img src="profile.png" alt="Anand Kumar Mainali – Full Stack Developer" class="profile-photo" />
+          <div class="code-orbit">
+            <div class="orbit-ring ring-outer"></div>
+            <div class="orbit-ring ring-inner"></div>
+            <div class="orbit-core">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="24 52 10 40 24 28" />
+                <polyline points="56 28 70 40 56 52" />
+                <line x1="46" y1="22" x2="34" y2="58" />
+              </svg>
             </div>
+            <span class="orbit-node node-1">Laravel</span>
+            <span class="orbit-node node-2">React</span>
+            <span class="orbit-node node-3">PHP</span>
           </div>
-          <div class="floating-badge badge-1">Laravel</div>
-          <div class="floating-badge badge-2">ReactJS</div>
-          <div class="floating-badge badge-3">VueJS</div>
         </div>
       </div>
       <div class="hero-scroll">
@@ -495,6 +498,21 @@
       });
     });
 
+    // Active nav link on scroll
+    const sections = document.querySelectorAll('section[id]');
+    const navAnchors = document.querySelectorAll('.nav-links a');
+    const sectionObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const id = entry.target.getAttribute('id');
+          navAnchors.forEach(a => {
+            a.classList.toggle('active', a.getAttribute('href') === '#' + id);
+          });
+        }
+      });
+    }, { rootMargin: '-40% 0px -60% 0px' });
+    sections.forEach(s => sectionObserver.observe(s));
+
     // Intersection observer for fade-in animations
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(e => {
@@ -508,20 +526,6 @@
     document.querySelectorAll('.timeline-item, .project-card, .skill-group, .stat-card, .contact-card, .edu-card')
       .forEach(el => observer.observe(el));
 
-    // 3D tilt effect on profile photo
-    const heroVisual = document.querySelector('.hero-visual');
-    const photoCard = document.getElementById('photoCard');
-    if (heroVisual && photoCard) {
-      heroVisual.addEventListener('mousemove', (e) => {
-        const rect = heroVisual.getBoundingClientRect();
-        const x = (e.clientX - rect.left) / rect.width - 0.5;
-        const y = (e.clientY - rect.top) / rect.height - 0.5;
-        photoCard.style.transform = `rotateY(${x * 14}deg) rotateX(${-y * 10}deg)`;
-      });
-      heroVisual.addEventListener('mouseleave', () => {
-        photoCard.style.transform = 'rotateY(0deg) rotateX(0deg)';
-      });
-    }
 </script>
 
 </body>

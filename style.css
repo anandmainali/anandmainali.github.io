@@ -164,7 +164,9 @@ img { display: block; max-width: 100%; }
   transition: color var(--transition);
 }
 .nav-links a:hover { color: var(--text); }
-.nav-links .btn { color: #fff; margin-left: 0.5rem; }
+.nav-links a.active {
+  color: var(--accent-2);
+}
 
 .nav-toggle {
   display: none;
@@ -260,61 +262,93 @@ img { display: block; max-width: 100%; }
   transform: translateY(-2px);
 }
 
-/* Avatar */
+/* Code Orbit */
 .hero-visual {
   position: relative;
-  width: 460px;
+  width: 360px;
+  height: 360px;
   flex-shrink: 0;
-  perspective: 1200px;
-  align-self: flex-end;
+  align-self: center;
 }
 
-.photo-card {
+.code-orbit {
   width: 100%;
   height: 100%;
   position: relative;
-  transform-style: preserve-3d;
-  transition: transform 0.08s ease;
-  cursor: default;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.photo-wrap {
-  width: 100%;
-  height: 100%;
+.orbit-ring {
+  position: absolute;
+  border-radius: 50%;
+  border: 1px solid rgba(99,102,241,0.18);
+}
+.orbit-ring.ring-outer {
+  inset: 0;
+  animation: spinSlow 30s linear infinite;
+}
+.orbit-ring.ring-inner {
+  inset: 50px;
+  border-style: dashed;
+  border-color: rgba(99,102,241,0.1);
+  animation: spinSlow 20s linear infinite reverse;
 }
 
-.profile-photo {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  object-position: center bottom;
-  display: block;
-  filter: drop-shadow(-8px 12px 30px rgba(99, 102, 241, 0.5));
+.orbit-core {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, rgba(99,102,241,0.15), rgba(129,140,248,0.06));
+  border: 1.5px solid rgba(99,102,241,0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent-2);
+  box-shadow: 0 0 60px rgba(99,102,241,0.12), inset 0 0 30px rgba(99,102,241,0.04);
+  position: relative;
+  z-index: 2;
+}
+.orbit-core svg {
+  width: 56px;
+  height: 56px;
 }
 
-.floating-badge {
+/* Nodes on the outer ring — 3 points at 120° intervals on a 360px circle (r=180) */
+.orbit-node {
   position: absolute;
   font-family: var(--font-mono);
-  font-size: 0.7rem;
-  padding: 0.35rem 0.75rem;
-  background: var(--bg-3);
-  border: 1px solid var(--border);
+  font-size: 0.72rem;
+  font-weight: 500;
+  padding: 0.35rem 0.85rem;
+  background: var(--bg-2);
+  border: 1px solid rgba(99,102,241,0.3);
   border-radius: 100px;
   color: var(--accent-2);
   white-space: nowrap;
-  animation: float 3s ease-in-out infinite;
+  z-index: 3;
+  transform: translate(-50%, -50%);
 }
-.badge-1 { top: 24px; left: -30px; animation-delay: 0s; }
-.badge-2 { top: 50%; right: -36px; transform: translateY(-50%); animation-delay: 1s; }
-.badge-3 { bottom: 24px; left: -20px; animation-delay: 2s; }
-@keyframes float {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-6px); }
+/* Top center: 270° → (50%, 0%) */
+.orbit-node.node-1 {
+  top: 0%;
+  left: 50%;
 }
-.badge-2 { animation: float2 3s ease-in-out 1s infinite; }
-@keyframes float2 {
-  0%, 100% { transform: translateY(-50%); }
-  50% { transform: translateY(calc(-50% - 6px)); }
+/* Bottom right: 30° → cos30=0.866, sin30=0.5 → (93.3%, 75%) */
+.orbit-node.node-2 {
+  top: 75%;
+  left: 93.3%;
+}
+/* Bottom left: 150° → cos150=-0.866, sin150=0.5 → (6.7%, 75%) */
+.orbit-node.node-3 {
+  top: 75%;
+  left: 6.7%;
+}
+
+@keyframes spinSlow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
 }
 
 .hero-scroll {
@@ -694,7 +728,11 @@ img { display: block; max-width: 100%; }
    ============================================= */
 @media (max-width: 900px) {
   .hero-inner { grid-template-columns: 1fr; text-align: center; align-items: center; }
-  .hero-visual { width: 280px; margin: 0 auto; align-self: auto; order: -1; }
+  .hero-visual { width: 240px; height: 240px; margin: 0 auto; align-self: auto; order: -1; }
+  .orbit-core { width: 90px; height: 90px; }
+  .orbit-core svg { width: 42px; height: 42px; }
+  .orbit-ring.ring-inner { inset: 36px; }
+  .orbit-node { font-size: 0.65rem; padding: 0.25rem 0.65rem; }
   .hero-actions { justify-content: center; }
   .hero-socials { justify-content: center; }
   .about-grid { grid-template-columns: 1fr; gap: 2.5rem; }
@@ -723,7 +761,6 @@ img { display: block; max-width: 100%; }
     padding: 0.9rem 1.5rem;
     font-size: 1rem;
   }
-  .nav-links .btn { margin: 0.5rem 1.5rem; display: inline-flex; }
   .nav-toggle { display: flex; }
 
   .timeline { padding-left: 1.5rem; }
