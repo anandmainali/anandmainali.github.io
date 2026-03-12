@@ -39,7 +39,7 @@
     "name": "Anand Kumar Mainali",
     "jobTitle": "Full Stack Developer",
     "url": "https://anandmainali.com.np",
-    "email": "anandmainali5@gmail.com",
+    "email": "",
     "image": "https://anandmainali.com.np/og-image.png",
     "sameAs": [
       "https://www.linkedin.com/in/anandmainali",
@@ -96,7 +96,7 @@
             <a href="#contact" class="btn btn-outline">Get in Touch</a>
           </div>
           <div class="hero-socials">
-            <a href="mailto:anandmainali5@gmail.com" aria-label="Email">
+            <a href="#" aria-label="Email" data-email-link>
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="2,4 12,13 22,4"/></svg>
             </a>
             <a href="https://www.linkedin.com/in/anandmainali" target="_blank" rel="noopener" aria-label="LinkedIn">
@@ -437,13 +437,13 @@
           </p>
         </div>
         <div class="contact-grid">
-          <a href="mailto:anandmainali5@gmail.com" class="contact-card">
+          <a href="#" class="contact-card" data-email-link>
             <div class="contact-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="2,4 12,13 22,4"/></svg>
             </div>
             <div>
               <p class="contact-label">Email</p>
-              <p class="contact-value">anandmainali5@gmail.com</p>
+              <p class="contact-value" data-email-text></p>
             </div>
           </a>
           <a href="https://www.linkedin.com/in/anandmainali" target="_blank" rel="noopener" class="contact-card">
@@ -528,6 +528,26 @@
 
     document.querySelectorAll('.timeline-item, .project-card, .skill-group, .stat-card, .contact-card, .edu-card')
       .forEach(el => observer.observe(el));
+
+    // Email obfuscation — assembled at runtime to prevent bot scraping
+    (function() {
+      var u = 'anandmainali5';
+      var d = 'gmail.com';
+      var addr = u + '@' + d;
+      document.querySelectorAll('[data-email-link]').forEach(function(el) {
+        el.href = 'mailto:' + addr;
+      });
+      document.querySelectorAll('[data-email-text]').forEach(function(el) {
+        el.textContent = addr;
+      });
+      // Populate JSON-LD
+      var ld = document.querySelector('script[type="application/ld+json"]');
+      if (ld) {
+        var data = JSON.parse(ld.textContent);
+        data.email = addr;
+        ld.textContent = JSON.stringify(data);
+      }
+    })();
 
 </script>
 
